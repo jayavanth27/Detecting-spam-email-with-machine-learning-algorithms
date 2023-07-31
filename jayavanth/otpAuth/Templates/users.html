@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+</head>
+<body>
+    <div class="Users List">
+        <h2 style="display: flex; justify-content: center;">Users List</h2>
+        <div style="display: flex; justify-content: center;">
+        <table>
+            <tr>
+                <th>Email Id</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>OTP</th>
+            </tr>
+            {% for user in users %}
+            <tr>
+                <td>{{user.emailId}}</td>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <td>{{user.otp}}</td>
+            </tr>  
+            {% endfor %}   
+        </table>
+        </div>  
+    </div>
+</body>
+</html>

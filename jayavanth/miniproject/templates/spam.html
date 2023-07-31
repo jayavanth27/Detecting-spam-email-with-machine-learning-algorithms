@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>"Email classified result"</title>
+</head>
+<style>
+    h2{
+        text-align: center;
+    }
+.ham{
+    /* background-color: red; */
+    padding-bottom: 500px;
+    margin: auto;
+}
+.image{
+    text-align: center;
+    width: 100%;
+}
+</style>
+<body>
+<!-- <h1>The Message typed is</h1>
+{% for post in posts %}
+<h2>{{post.msg}}</h2>
+{% endfor %} -->
+<div class="ham">
+{% if Mail %}
+<img src="https://image3.mouthshut.com/images/imagesp/925814430s.jpg" alt="Sastra Logo" width="50px" height="50px">
+<div>
+<h2 >{{Mail}}</h2>
+</div>
+<div class="image">
+    <img src="https://thumbs.gfycat.com/MemorableBadGenet.webp" alt="Spam" width="15%">
+</div>
+{% endif %}
+</div>s
+</body>
+</html>

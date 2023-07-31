@@ -1,0 +1,49 @@
+<html>
+<head>
+<style>
+    body {
+        /* background-image: url(https://wallpaperaccess.com/full/2579667.jpg); */
+        background-position: center;
+    margin: auto;
+    /* max-width: 350px; */
+    padding-top: 42px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;}
+    h1 {text-align: center;}
+    
+    .email{
+    color: rgb(10, 127, 190);
+    text-align: center;
+    font-size: large;
+    }
+    .submit{
+        text-align: center;
+    }
+    .image{
+        padding-top: 2%;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+        margin: auto;
+    }
+</style> 
+<title>Email Spam Detector</title>
+</head>
+<h1 style="color:rgb(1, 8, 8)">EMAIL SPAM CLASSIFIER</h1>
+<body>
+<form method="post">
+{%csrf_token%}
+<div class="email">{{form.as_p}}</div>
+<div class="submit"><input type="submit" value="SUBMIT" >
+</div>
+</form>
+<div class="image">
+    <img src="https://media.kasperskydaily.com/wp-content/uploads/sites/85/2013/10/05134808/21.gif" alt="MAIL CLASSIFIER" width="480px">
+    </div>
+{% if status %}
+<h2>Status : {{status}}</h2>
+{% endif %}
+</body>
+</html>
